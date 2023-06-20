@@ -2,10 +2,10 @@
 
 UFit is a fitness app that values trainers’ and clients’ time, success, and wellbeing. This application strives for excellence in terms of efficiency and simplicity, ultimately allowing clients to achieve their fitness goals. 
 
-Key objectives of this app: 
+Key objectives of this app:  <br>
 •	Develop an application that aids trainers in creating and launching specialized programs based on individual clients’ goals. <br>
-•	Create an application that is easy to use with helpful features like visual aids, targeting beginner athletes who require careful explanation. 
-•	To utilize a database to store information about users, workout programs and exercises. 
+•	Create an application that is easy to use with helpful features like visual aids, targeting beginner athletes who require careful explanation.  <br>
+•	To utilize a database to store information about users, workout programs and exercises.  <br>
 
 
 ## Tech Stack
