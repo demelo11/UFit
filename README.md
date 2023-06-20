@@ -15,4 +15,4 @@ Xamarin framework, C#, SQLite
 
 ## Photos 
 
-![My Image]([Screenshot 2023-06-20 at 3.28.20 PM.png](https://github.com/demelo11/UFit/blob/cccce67bfcceeaac48f90328a621f291aea62f84/Screenshot%202023-06-20%20at%203.27.42%20PM.png)https://github.com/demelo11/UFit/blob/cccce67bfcceeaac48f90328a621f291aea62f84/Screenshot%202023-06-20%20at%203.27.42%20PM.png)
+
