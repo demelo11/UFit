@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="UFit.Menu"
+    xmlns:local="clr-namespace:UFit"
+    xmlns:common="clr-namespace:UFit.Common"
+    NavigationPage.HasNavigationBar="False">
+
+     <ScrollView>
+   
+       <Grid
+        RowSpacing="0"
+        ColumnSpacing="0">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="9*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" BackgroundColor="#ebfaf9">
+        <Image
+           Grid.Row="0"
+            Source="{local:ImageResource UFit.photos.logo.png}"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Margin="-30,-50,0,0"
+            HeightRequest="200"
+            WidthRequest="200"
+            />
+
+
+         <Button Grid.Row="0"   HorizontalOptions="End" Margin="0,-140,30,0" Clicked="OnAddButtonClicked" >
+          <Button.ImageSource>
+            <FontImageSource
+                FontFamily="Typicons"
+                Glyph="{x:Static common:IconFont.UserAdd}"
+                Color="#00CCD6"
+                Size="30"/>
+        </Button.ImageSource>
+            </Button>
+        </StackLayout>
+
+
+        <StackLayout Grid.Row="1" >
+
+        <Label 
+          
+            x:Name="Welcome"
+            Text="Welcome back!"
+            FontSize="Title"
+           
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            TextColor="#00CCD6"
+            Margin="0,50,10,20"
+            />
+        
+      <Button HorizontalOptions="Center" BackgroundColor="#00b7c0" TextColor="white" Text="Clients" FontSize="30" HeightRequest="200" WidthRequest="500" Clicked="ClientsButtonClicked" >
+          <Button.ImageSource>
+            <FontImageSource
+                FontFamily="Typicons"
+                Glyph="{x:Static common:IconFont.User}"
+                Color="white"
+                Size="35"
+                />
+        </Button.ImageSource>
+            </Button>
+
+
+            <Button HorizontalOptions="Center" BackgroundColor="#19d1da" TextColor="white" FontSize="30" Text="Programs" HeightRequest="200" WidthRequest="500" Clicked="ProgramButtonClicked" >
+          <Button.ImageSource>
+            <FontImageSource
+                FontFamily="Typicons"
+                Glyph="{x:Static common:IconFont.Pen}"
+                Color="white"
+                Size="35"
+                />
+        </Button.ImageSource>
+            </Button>
+
+
+           
+            <Button HorizontalOptions="Center" BackgroundColor="#99eaee" TextColor="white" FontSize="30" Text="LogOut" HeightRequest="200" WidthRequest="500" Clicked="LogoutButtonClicked" >
+          <Button.ImageSource>
+            <FontImageSource
+                FontFamily="Typicons"
+                Glyph="{x:Static common:IconFont.ArrowBack}"
+                Color="white"
+                Size="35"
+                />
+        </Button.ImageSource>
+            </Button>
+              </StackLayout>
+    </Grid>
+
+         </ScrollView>
+
+</ContentPage>
+

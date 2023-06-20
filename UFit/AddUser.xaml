@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:UFit"
+    NavigationPage.HasNavigationBar="False"
+    x:Class="UFit.AddUser
+
+    ">
+    
+    <Grid
+        RowSpacing="0"
+        ColumnSpacing="0">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="5*" />
+        </Grid.RowDefinitions>
+
+        <StackLayout BackgroundColor="#ebfaf9">
+        <Image
+            Grid.Row="0"
+            Source="{local:ImageResource UFit.photos.logo.png}"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            HeightRequest="200"
+            WidthRequest="200"
+            Margin="0,-40,0,0"/>
+
+        </StackLayout>
+        <Label 
+            Grid.Row="1"
+            Text="Add Client"
+            FontSize="Title"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            TextColor="#00CCD6"/>
+        
+        <StackLayout                
+            Grid.Row="2"
+            VerticalOptions="Fill"
+            HorizontalOptions="Center"
+            Spacing="15">
+
+            <StackLayout HorizontalOptions="Center" Spacing="5">
+               
+                <Entry
+                    x:Name="EmailEntry"
+                    Placeholder="Email*"
+                    Keyboard="Email"
+                    WidthRequest="300"
+                    Margin="0,0,0,30"
+                    BackgroundColor="#ebfaf9"
+                    Focused="OnEmailEntryFocused"
+                    Unfocused="OnEmailEntryUnfocused"/>
+            </StackLayout>
+
+
+            <StackLayout HorizontalOptions="Center" Spacing="5">
+                
+                <Entry
+                   x:Name="NameEntry"
+                   Placeholder="Name*"
+                    WidthRequest="300"
+                    Margin="0,0,0,30"
+                    BackgroundColor="#ebfaf9"
+                    Focused="OnNameEntryFocused" Unfocused="OnNameEntryUnfocused"/>
+           </StackLayout>
+
+
+            <StackLayout HorizontalOptions="Center" Spacing="5">
+              <Button
+            Grid.Row="2"
+            Text="ADD"
+            TextColor="white"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="15,10"
+            WidthRequest="150"
+            BackgroundColor="#00CCD6"
+            Clicked="OnAddClicked"
+            />
+            </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" Spacing="5">
+              <Button
+            Grid.Row="2"
+            Text="BACK"
+            TextColor="white"
+            HorizontalOptions="End"
+            VerticalOptions="End"
+            Margin="15,0"
+            WidthRequest="150"
+            BackgroundColor="#00CCD6"
+            Clicked="OnBackClicked"
+            />
+            </StackLayout>
+
+
+
+         
+       <StackLayout HorizontalOptions="Center" Spacing="5">
+            <Label Margin="10,0,10,0" x:Name="Error" HorizontalTextAlignment="Center" TextColor="Red"
+            />
+        </StackLayout>
+   </StackLayout>
+     
+        
+     
+
+    </Grid>
+</ContentPage>
+
